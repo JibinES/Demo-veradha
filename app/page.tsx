@@ -2,7 +2,10 @@ import Link from 'next/link'
 import { ArrowRight, Truck, RotateCcw, Shield, Star } from 'lucide-react'
 import Button from '@/components/ui/Button'
 import ProductCard from '@/components/ui/ProductCard'
-import products from '@/data/products.json'
+import { Product } from '@/lib/types'
+import productsData from '@/data/products.json'
+
+const products = productsData as Product[]
 
 const heroSlides = [
   {
