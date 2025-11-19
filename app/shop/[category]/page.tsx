@@ -5,8 +5,10 @@ import { useParams } from 'next/navigation'
 import { ChevronDown, Filter, X } from 'lucide-react'
 import ProductCard from '@/components/ui/ProductCard'
 import Button from '@/components/ui/Button'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
 import { Product } from '@/lib/types'
+
+const products = productsData as Product[]
 
 const sortOptions = [
   { value: 'featured', label: 'Featured' },

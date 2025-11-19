@@ -4,9 +4,12 @@ import { useState, useMemo } from 'react'
 import { Search, Plus, Edit, Trash2, Eye } from 'lucide-react'
 import Link from 'next/link'
 import { formatPrice } from '@/lib/utils'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
+import { Product } from '@/lib/types'
 import Button from '@/components/ui/Button'
 import Input from '@/components/ui/Input'
+
+const products = productsData as Product[]
 
 export default function ProductsPage() {
   const [searchTerm, setSearchTerm] = useState('')

@@ -5,7 +5,10 @@ import { Heart } from 'lucide-react'
 import { useStore } from '@/store/useStore'
 import ProductCard from '@/components/ui/ProductCard'
 import Button from '@/components/ui/Button'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
+import { Product } from '@/lib/types'
+
+const products = productsData as Product[]
 
 export default function WishlistPage() {
   const router = useRouter()

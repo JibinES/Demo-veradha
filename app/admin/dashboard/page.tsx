@@ -14,7 +14,10 @@ import {
 } from 'lucide-react'
 import { useAdminStore } from '@/store/useAdminStore'
 import { formatPrice } from '@/lib/utils'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
+import { Product } from '@/lib/types'
+
+const products = productsData as Product[]
 
 export default function AdminDashboard() {
   const { orders } = useAdminStore()

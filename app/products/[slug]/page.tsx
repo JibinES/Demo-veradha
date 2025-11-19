@@ -9,8 +9,10 @@ import Button from '@/components/ui/Button'
 import ProductCard from '@/components/ui/ProductCard'
 import { useStore } from '@/store/useStore'
 import { formatPrice, calculateDiscount } from '@/lib/utils'
-import products from '@/data/products.json'
+import productsData from '@/data/products.json'
 import { Product } from '@/lib/types'
+
+const products = productsData as Product[]
 
 const tabs = [
   { id: 'description', label: 'Description' },
